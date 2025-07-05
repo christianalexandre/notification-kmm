@@ -1,0 +1,19 @@
+### Push Notification FCM
+
+POST https://fcm.googleapis.com/v1/projects/notifications-kmm/messages:send
+Authorization: Bearer TOKEN_FROM_GOOGLE_ACCOUNT
+Content-Type: application/json
+
+{
+  "message": {
+    "token": "FCM_TOKEN_FROM_DEVICE",
+    "notification": {
+      "title": "Title Notification",
+      "body": "Body Notification"
+    },
+    "data": {
+      "key_1": "Notification",
+      "key_2": "Test"
+    }
+  }
+}
